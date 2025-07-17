@@ -39,12 +39,14 @@ nav ul li :hover {
 
 /* MAIN */
 
-.fondoMainIndex{
+.fondoMainIndex {
     background-color: white;
     width: 100%;
-    height: 120vh;
+    min-height: 100vh;
     padding: 120px 0 0 0;
+    margin-bottom: 2vh;
 }
+
 
 .inicio-card{
     padding: 0px 0 0 0;
@@ -91,7 +93,7 @@ nav ul li :hover {
 .fondoMainProductos{
     background-color: white;
     width: 100%;
-    height: 79.1vh;
+    min-height: 79.1vh;
     padding: 120px 0 0 0;
     align-items: center;
 }
@@ -137,8 +139,9 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 2vh;
 }
+
 
 .espacioFooterA{
     padding: 0 10px 0 0;
@@ -177,6 +180,12 @@ form {
     }
     100%{
         box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+@media (min-width: 500px) and (max-width: 992px) {
+.footerNosotros {
+        margin-top: 15vh;
     }
 }
 
@@ -255,17 +264,16 @@ form {
 
 @media(min-width:992px) {
 
-    .mapaGrande{
-        display: block;
-     }
+         #mapaN {
+    max-width: 100%;
+    height: 60vh;
+    width: 200vh;
+    display: block;
+}
  
      .mapaChico{
          display: none;
       }
-
-    .fondoFooterB{
-        margin: 70px 0 0 0;
-    }
     
     #alineado {
         display: flex;
@@ -297,5 +305,10 @@ form {
             width: 300px;
             border-radius: 5px;
         }
+
+        .footerNosotros {
+        margin-top: 24vh;
+    }
+
 }
 
